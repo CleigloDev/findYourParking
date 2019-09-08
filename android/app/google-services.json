@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123239671899",
+    "firebase_url": "https://findyourparking-252309.firebaseio.com",
+    "project_id": "findyourparking-252309",
+    "storage_bucket": "findyourparking-252309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123239671899:android:3a237bcd4cd0c5cee6f77e",
+        "android_client_info": {
+          "package_name": "com.findyourparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123239671899-jfat3gacmhdb8ic56n16l5r6502q7mlu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.findyourparking",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "123239671899-1rmt1dt7a6rf11tapepgn6vgjfgrojrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOvaX-b4SFHFLj8Dd2t2qQYMY1iUBjodw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123239671899-1rmt1dt7a6rf11tapepgn6vgjfgrojrk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
