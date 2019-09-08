@@ -15,8 +15,11 @@ const Maps = props =>{
             zoomTapEnabled={true}
             >
             {props.Parkings.map((marker, i) => (
-                <MapView.Marker key={marker.key} coordinate={marker.latlong} title="Parcheggio Libero"
+                <MapView.Marker key={marker.key} coordinate={marker.latlong} title="Parcheggio Libero" description="Clicca qui per prenotarlo!"
                 onCalloutPress={(event) => props.BookParking(event, marker.latlong, marker.key)}/>))}
+            {props.Booked.map((marker, i) => (
+                <MapView.Marker key={marker.key} coordinate={marker.latlong} title="Parcheggio Prenotato" description="Clicca per arrivarci con Maps!"
+                onCalloutPress={(event) => props.GetThereWithMaps(event, marker.latlong, marker.key)}/>))}
         </MapView>
     );
 }
