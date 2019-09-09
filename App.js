@@ -18,7 +18,6 @@ import {
   Alert,
   ToastAndroid,
 } from 'react-native';
-import MapView from 'react-native-maps';
 import Maps from './Components/Map.js'
 import Geolocation from 'react-native-geolocation-service';
 import getDirections from 'react-native-google-maps-directions';
@@ -64,9 +63,6 @@ class App extends React.Component {
     })
     .catch((error) => {
       const { code, message } = error;
-      // For details of error codes, see the docs
-      // The message contains the default Firebase string
-      // representation of the error
     });
   };
 
@@ -74,6 +70,9 @@ class App extends React.Component {
     let isSigned = await GoogleSignin.isSignedIn();
     isSigned = !isSigned;
     this.setState({showUserRegister: isSigned});
+    if(!isSigned){
+      this.signIn();
+    }
   };
 
   componentDidMount = async() => {
