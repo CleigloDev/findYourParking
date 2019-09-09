@@ -16,6 +16,7 @@ const Maps = props =>{
             >
             {props.Parkings.map((marker, i) => (
                 <MapView.Marker key={marker.key} coordinate={marker.latlong} title="Parcheggio Libero" description="Clicca qui per prenotarlo!"
+                image={require('../icons/icon_parcking_available.png')}
                 onCalloutPress={(event) => props.BookParking(event, marker.latlong, marker.key)}/>))}
             {props.Booked.map((marker, i) => (
                 <MapView.Marker key={marker.key} coordinate={marker.latlong} title="Parcheggio Prenotato" description="Clicca per arrivarci con Maps!"
